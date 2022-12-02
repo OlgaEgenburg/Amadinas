@@ -1,0 +1,33 @@
+.fialka__title-link {
+  color: $basic-text;
+  text-decoration: none;
+}
+
+.fialka {
+    width: 300px;
+    border: 1px solid #E3E3E3;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+}
+.fialka__title {
+    margin: 0;
+}
+.fialka__conatiner {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.fialka__wrap-price {
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+  border: 1px solid #EFEFEF;
+}
+
+.fialka__button {
+  width: 150px;
+}
+

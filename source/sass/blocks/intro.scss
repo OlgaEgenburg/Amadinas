@@ -1,0 +1,51 @@
+.intro {
+  @include tablet {
+    position: relative;
+  }
+}
+.intro__description {
+  @include tablet {
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+    left: 330px;
+  }
+
+  @include desktop {
+    top: 40px;
+    left: 630px;
+  }
+}
+
+.intro__gallery {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.intro__title {
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  @include tablet {
+    background-color: white;
+    padding: 5px;
+  }
+  @include desktop {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.intro__text {
+  text-transform: uppercase;
+  @include tablet {
+    background-color: white;
+    text-align: right;
+    padding-right: 10px;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

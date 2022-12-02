@@ -1,0 +1,127 @@
+.card {
+  list-style-type: none;
+  padding-left: 0;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  @include mobile-width-only {
+    padding: 23px 20px 23px;
+    border-bottom: 1px solid $decoration-color;
+  }
+
+  &:first-child {
+    @include mobile-width-only {
+      border-top: 1px solid $decoration-color;
+    }
+  }
+}
+
+.card__item {
+  position: relative;
+}
+
+.card__item:first-child {
+  @include tablet {
+    grid-column: 1 / -1;
+  }
+}
+
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+
+  @include tablet {
+    display: block;
+    height: 267px;
+
+    &--main {
+      height: 400px;
+    }
+  }
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__author {
+  color: $secondary-text;
+  margin: 0;
+
+  @include desktop {
+    color: $basic-text;
+  }
+}
+
+.card__info-container {
+  @include tablet {
+    background-color: $inputs-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+  }
+
+  @include desktop {
+    position: absolute;
+    background-color: rgba(#F5F5F5, 0.8);
+    color: $basic-text;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 19px 20px 18px;
+  }
+}
+
+.card__button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+.card__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__like-container {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+
+  @include tablet {
+    padding-top: 0;
+  }
+}
+
+.card__button-icon {
+  opacity: 0.3;
+
+  @include desktop {
+    color: $additional-color-text;
+    opacity: 1;
+  }
+}
+
+.card__results {
+  font-weight: 700;
+  margin: 0;
+}

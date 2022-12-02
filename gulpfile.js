@@ -3,9 +3,12 @@ import plumber from 'gulp-plumber';
 import browser from 'browser-sync';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
+import {deleteAsync} from 'del';
 
 
 
@@ -17,6 +20,7 @@ export const styles = () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
@@ -47,16 +51,16 @@ const html = () =>  {
 // }
 
 // // images
-// const optimizeImages = () => {
-//   return gulp.src('source/img/**/*.{jpg,png}')
-//     .pipe(squoosh())
-//     .pipe(gulp.dest('build/img'))
-// }
+const optimizeImages = () => {
+  return gulp.src('source/img/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
 
-// const copyImages = () => {
-//   return gulp.src('source/img/**/*.{png,jpg}')
-//     .pipe(gulp.dest('build/img'))
-// }
+const copyImages = () => {
+  return gulp.src('source/img/*.{png,jpg}')
+    .pipe(gulp.dest('build/img'))
+}
 
 
 //scripts
@@ -69,23 +73,21 @@ const scripts = () => {
 
 // Copy
 
-// const copy = (done) => {
-//   gulp.src([
-//   'source/fonts/*.{woff2,woff}',
-//   'source/*.ico',
-//   'source/manifest.webmanifest'
-//   ], {
-//   base: 'source'
-//   })
-//   .pipe(gulp.dest('build'))
-//   done();
-// }
+const copy = (done) => {
+  gulp.src([
+  'source/fonts/*.{woff2,woff}'
+  ], {
+  base: 'source'
+  })
+  .pipe(gulp.dest('build'))
+  done();
+}
 
 //Clean
 
-// const clean = () => {
-//   return deleteAsync('build');
-// }
+const clean = () => {
+  return deleteAsync('build');
+}
 
 // Server
 
@@ -119,6 +121,9 @@ const watcher = () => {
 // Build
 
 export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
   gulp.parallel(
   styles,
   html,
@@ -129,6 +134,9 @@ export const build = gulp.series(
 // Default
 
 export default gulp.series(
+  clean,
+  copy,
+  copyImages,
 gulp.parallel(
   styles,
   html,
