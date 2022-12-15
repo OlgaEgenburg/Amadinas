@@ -4,11 +4,13 @@ import browser from 'browser-sync';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
+import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import {deleteAsync} from 'del';
+import svgo from 'gulp-svgmin';
 
 
 
@@ -34,21 +36,21 @@ const html = () =>  {
 }
 
  // SVG
-//  export const svg = () => {
-//   return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-//     .pipe(svgo())
-//     .pipe(gulp.dest('build/img'));
-//  }
+ export const svg = () => {
+  return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+ }
 
-// export const sprite = () => {
-//   return gulp.src('source/img/icons/*.svg')
-//     .pipe(svgo())
-//     .pipe(svgstore({
-//     inlineSvg: true
-//      }))
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest('build/img'));
-// }
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+    inlineSvg: true
+     }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
 
 // // images
 const optimizeImages = () => {
@@ -127,7 +129,9 @@ export const build = gulp.series(
   gulp.parallel(
   styles,
   html,
-  scripts
+  scripts,
+  svg,
+  sprite
   ),
   );
 
@@ -140,7 +144,9 @@ export default gulp.series(
 gulp.parallel(
   styles,
   html,
-  scripts
+  scripts,
+  svg,
+  sprite
   ),
 gulp.series(
   server,

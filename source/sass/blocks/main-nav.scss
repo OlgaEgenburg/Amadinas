@@ -1,8 +1,10 @@
 .main-nav {
-  min-height: 79px;
+  
   position: relative;
   z-index: 2;
-  // background-color: @blue;
+  @include mobile-width-only {
+    min-height: 79px;
+  }
 }
 
 .main-nav__toggle {
@@ -80,7 +82,7 @@
     width: 320px;
     z-index: 10;
     // min-height: 60vh;
-    background-color: $basic-back;
+    background-color: $seconadary-back;
   }
 
   .main-nav--nojs .main-nav__toggle {

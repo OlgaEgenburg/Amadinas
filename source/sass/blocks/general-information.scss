@@ -1,0 +1,16 @@
+.general-information__title {
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+
+.general-information__text {
+  @include desktop {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+  }
+}
+
+.general-information__button {
+  margin-bottom: 35px;
+}

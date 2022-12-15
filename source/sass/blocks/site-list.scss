@@ -1,5 +1,4 @@
 .site-list {
-  font-weight: 700;
   list-style-type: none;
   background-color: #F5F5F5;
   padding-left: 0;
@@ -14,10 +13,9 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    background-color: $basic-back;
+    background-color: $seconadary-back;
     color: $basic-text;
     margin: 0;
-    margin-top: 20px;
   }
 
   &::after {
@@ -59,7 +57,6 @@
   }
 
   @include desktop {
-    width: 240px;
     box-shadow: none;
   }
 }
@@ -68,7 +65,6 @@
   display: block;
   color: $basic-text;
   text-decoration: none;
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   padding: 17px 83px 12px 81px;

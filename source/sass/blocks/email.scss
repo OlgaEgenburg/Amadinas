@@ -1,0 +1,23 @@
+.email__value {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    color: $secondary-text;
+    padding-right: 40px;
+    margin-left: 30px;
+};
+
+.email__text {
+  font-size: 18px;
+  font-weight: 700;
+  color: $basic-text;
+  margin: 0;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;;
+}

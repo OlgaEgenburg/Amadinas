@@ -3,9 +3,13 @@
   padding-left: 0;
   @include tablet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-
+  @include desktop {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   @include mobile-width-only {
     padding: 23px 20px 23px;
@@ -23,9 +27,14 @@
   position: relative;
 }
 
-.card__item:first-child {
+.card__item:nth-child(2) {
+  background-color: $secondary-text;
+  color: $basic-back;
+}
+
+.card__item:nth-child(4) {
   @include tablet {
-    grid-column: 1 / -1;
+    grid-column: 1 / 3;
   }
 }
 
@@ -44,46 +53,52 @@
 }
 
 .card__title {
-  text-transform: uppercase;
+  background-color: $basic-back;
+  color: $basic-text;
   font-weight: 700;
   margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  padding-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5px 10px 5px;
 
-  @include tablet {
-    padding-top: 0;
+  &--additional {
+    background-color: $secondary-text;
+    color: $basic-back;
   }
 }
 
 .card__link {
   text-decoration: none;
   color: inherit;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 4;
 }
 
 .card__author {
-  color: $secondary-text;
+  background-color: $basic-back;
+  color: $basic-text;
   margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 5px 10px 5px;
 
-  @include desktop {
-    color: $basic-text;
+  &--additional {
+    background-color: $secondary-text;
+    color: $basic-back;
   }
 }
 
 .card__info-container {
+  color: $basic-back;
   @include tablet {
-    background-color: $inputs-color;
     display: flex;
     justify-content: space-between;
-    padding: 22px 20px 15px 20px;
   }
 
   @include desktop {
     position: absolute;
-    background-color: rgba(#F5F5F5, 0.8);
-    color: $basic-text;
-    bottom: 0;
-    width: 100%;
+    bottom: 0px;
     box-sizing: border-box;
     padding: 19px 20px 18px;
   }

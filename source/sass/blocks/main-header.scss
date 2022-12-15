@@ -1,11 +1,12 @@
 .main-header {
-  // background-color: @white;
+  background-color: $seconadary-back;
   // display: flex;
   position: relative;
 
   @include tablet {
-    background-color: $basic-back;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
@@ -30,3 +31,17 @@
 .main-header__logo-image {
   display: block;
 }
+
+.main-header__tel {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Ubuntu";
+  color: $secondary-text;
+  align-self: center;
+};
+
+.main-header__phone-icon {
+  margin-right: 10px;
+  margin-top: 17px;
+};

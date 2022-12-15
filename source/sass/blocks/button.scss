@@ -13,6 +13,18 @@
   padding-bottom: 8px;
   cursor: pointer;
 
+  &--secondary {
+    background: linear-gradient(180deg, #8EE902 0%, #4F9C2C 100%);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $basic-back;
+    font-size: 14px;
+    display: inline-block;
+    width: 120px;
+  }
+
   &:hover {
     color: $additional-color-text;
   }
