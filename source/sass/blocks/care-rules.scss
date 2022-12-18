@@ -1,0 +1,27 @@
+.care-rules {
+  background-color: $seconadary-back;
+  padding-top: 30px;
+}
+
+.care-rules__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-right: 55px;
+  padding: 0;
+}
+
+.care-rules__item {
+  margin-bottom: 25px;
+}
+
+.care-rules__title {
+  margin-bottom: 30px;
+}
+
+.care-rules__discription {
+  color: $secondary-text;
+  margin-bottom: 30px;
+}
