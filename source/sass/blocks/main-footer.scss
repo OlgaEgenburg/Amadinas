@@ -1,25 +1,25 @@
 .main-footer {
-    padding-top: 40px;
-    background-color: $seconadary-back;
+  padding-top: 40px;
+  background-color: $seconadary-back;
 };
 
 .main-footer__wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include tablet {
-        flex-direction: row;
-      }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include tablet {
+    flex-direction: row;
+  }
 };
 
 .main-footer__tel {
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 700;
-    font-family: "Ubuntu";
-    color: $secondary-text;
-    padding-right: 60px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  color: $secondary-text;
+  padding-right: 60px;
 };
 
 .main-footer__copyright {
@@ -27,6 +27,6 @@
 }
 
 .main-footer__phone-icon {
-    margin-right: 7px;
-    margin-top: 3px;
-  };
+  margin-right: 7px;
+  margin-top: 3px;
+};

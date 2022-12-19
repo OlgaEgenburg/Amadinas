@@ -6,9 +6,7 @@
   flex-direction: column;
   margin: 0;
   position: relative;
-  // @media (min-width: @tablet-width) {
-  //   display: flex;
-  // }
+
   @include tablet {
     display: flex;
     justify-content: flex-start;
@@ -84,23 +82,12 @@
   }
 }
 
-// @include mobile-width-only {
-//   .site-list__link:last-child {
-//     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 87,75%, rgba(0, 0, 0, 0,2) 100%);
-//   }
-// }
 
 @include tablet {
   .site-list__item:first-child {
     margin-left: 230px;
   }
 }
-
-// @include desktop {
-//   .site-list__item:nth-child(2) {
-//     margin-right: 240px;
-//   }
-// }
 
 .site-list__link:hover {
   @include tablet {

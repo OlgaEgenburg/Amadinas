@@ -1,5 +1,5 @@
 .main-nav {
-  
+
   position: relative;
   z-index: 2;
   @include mobile-width-only {
@@ -81,7 +81,6 @@
     position: absolute;
     width: 320px;
     z-index: 10;
-    // min-height: 60vh;
     background-color: $seconadary-back;
   }
 
@@ -98,10 +97,3 @@
     display: block;
   }
 }
-
-// .main-nav--opened .site-list__item:last-of-type {
-//   z-index: 2;
-//   height: 7px;
-//   width: 100%;
-//   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-// }
