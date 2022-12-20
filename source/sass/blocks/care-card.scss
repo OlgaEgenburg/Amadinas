@@ -1,7 +1,8 @@
 .care-card {
-  width: 255px;
+  width: 100%;
   box-sizing: border-box;
   padding: 25px 30px;
   background-color: $basic-back;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: left;
 }
