@@ -6,16 +6,37 @@
 .fialka {
   width: 300px;
   border: 1px solid #E3E3E3;
+  background-color: $seconadary-back;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+  height: 100%;
+  transform: scale(1);
+  transition: transform .5s;
   @include tablet {
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
   }
-  @include desktop {
-    width: 350px;
-  }
 }
+.fialka__text {
+  margin: 0;
+}
+.fialka__hidden-description {
+  height: 0;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.fialka:hover {
+  transform: scale(1.2);
+  width: 500px;
+  z-index: 3;
+}
+
+.fialka:hover .fialka__hidden-description {
+  height: 100px;
+}
+
 .fialka__title {
   margin: 0;
   padding-bottom: 10px;

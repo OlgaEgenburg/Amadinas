@@ -15,6 +15,7 @@
   position: absolute;
   z-index: 1;
   left: 0;
+  display: none;
 
   @include tablet {
     z-index: 3;
