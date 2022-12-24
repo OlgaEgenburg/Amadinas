@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мои Фиалки</title>
      <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-     <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="manifest" href="manifest.webmanifest">
+    <!-- <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+     <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -54,14 +53,22 @@
       </header>
       <main class="main-container">
         <section class="fialka-standart">
+          <h1 class="fialka-standart__title">тип стандарт</h1>
+          <p class="fialka-standart__description">Стандарт — сорта с розеткой от 20 до 40 см, которые пользуются большой популярностью у многих цветоводов. Большой стандарт — требовательные к пространству сорта фиалок, ведь диаметр их розеток 40 см и более.</p>
           <ul class="fialka-standart__list list">
             <li class="list__item fialka">
               <a class="fialka__link" href="#">
-                <img class="fialka__photo" alt="Curly Ocean." src="img/curly-ocean.png" width="260" height="211">
+                <img class="fialka__photo" alt="Pink Summit." src="img/pink-summit.jpg" width="260" height="211">
               </a>
               <a class="fialka__title-link" href="#">
-                <h3 class="fialka__title">Curly Ocean</h3>
+                <h3 class="fialka__title">Pink Summit</h3>
               </a>
+              <div class="fialka__hidden-description">
+                <p class="fialka__text">
+                  Простые и полумахровые розовые анютки с гофрированным бело-зелёным краем. Средне-зелёная листва.
+Крупные простые и волнистые полумахровые звезды с нежнейшими румянцами на лепестках, при этом остается нетронутым белый гофрированный край. Средне-зеленая парадная листва.
+                </p>
+              </div>
               <div  class="fialka__conatiner">
                 <div class="fialka__wrap-price">
                   <span class="fialka__price">60р</span>
@@ -73,15 +80,21 @@
                 </div>
               </div>
 
-              <button class="button fialka__button" type="button">Подробнее</button>
+              <!-- <button class="button fialka__button" type="button">Подробнее</button> -->
             </li>
             <li class="list__item fialka">
              <a class="fialka__link" href="#">
-               <img class="fialka__photo" alt="ЕК-Морячка." src="img/ek-moryachka.png" width="260" height="211">
+               <img class="fialka__photo" alt="ЕК-Одуванчики." src="img/ek-oduvan.jpg" width="260" height="211">
              </a>
              <a class="fialka__title-link" href="#">
-               <h3 class="fialka__title">ЕК-Морячка</h3>
+               <h3 class="fialka__title">ЕК-Одуванчики</h3>
              </a>
+             <div class="fialka__hidden-description">
+              <p class="fialka__text">
+                Крупные, махровые, ярко-жёлтые с белым цветы, края лепестков слегка тронуты розовым. Цветки пушистые и жёлтенькие, как цветущие одуванчики. Хорошая розетка из ярко-зелёных, зубчатых, слегка волнистых листьев.
+                Не прост в выращивании.
+              </p>
+            </div>
              <div  class="fialka__conatiner">
               <div class="fialka__wrap-price">
                 <span class="fialka__price">60р</span>
@@ -93,15 +106,20 @@
               </div>
             </div>
 
-            <button class="button fialka__button" type="button">Подробнее</button>
+            <!-- <button class="button fialka__button" type="button">Подробнее</button> -->
             </li>
             <li class="list__item fialka">
                 <a class="fialka__link" href="#">
-                  <img class="fialka__photo" alt="ЕК-Березовая Русь." src="img/ek-rus.png" width="260" height="211">
+                  <img class="fialka__photo" alt="ЕЛ-Lamborgini Veneno." src="img/lamborghini.jpg" width="260" height="211">
                 </a>
                 <a class="fialka__title-link" href="#">
-                  <h3 class="fialka__title">ЕК-Березовая Русь</h3>
+                  <h3 class="fialka__title">ЕЛ-Lamborgini Veneno</h3>
                 </a>
+                <div class="fialka__hidden-description">
+                  <p class="fialka__text">
+                    Крупная розовая "оса" с затемнением в центре цветка. Красивая пестролистная розетка.
+                  </p>
+                </div>
                 <div  class="fialka__conatiner">
                   <div class="fialka__wrap-price">
                     <span class="fialka__price">60р</span>
@@ -112,8 +130,31 @@
                     <span class="fialka__type">детка</span>
                   </div>
                 </div>
-
-                <button class="button fialka__button" type="button">Подробнее</button>
+                <!-- <button class="button fialka__button" type="button">Подробнее</button> -->
+               </li>
+               <li class="list__item fialka">
+                <a class="fialka__link" href="#">
+                  <img class="fialka__photo" alt="Dumplin." src="img/dumplin.jpg" width="260" height="211">
+                </a>
+                <a class="fialka__title-link" href="#">
+                  <h3 class="fialka__title">Dumplin</h3>
+                </a>
+                <div class="fialka__hidden-description">
+                  <p class="fialka__text">
+                    Фиалка с воздушными цветками-помпонами прекрасно переносит засуху и дает пышное цветение.
+                  </p>
+                </div>
+                <div  class="fialka__conatiner">
+                  <div class="fialka__wrap-price">
+                    <span class="fialka__price">60р</span>
+                    <span class="fialka__type">лист</span>
+                  </div>
+                  <div class="fialka__wrap-price">
+                    <span class="fialka__price">100р</span>
+                    <span class="fialka__type">детка</span>
+                  </div>
+                </div>
+                <!-- <button class="button fialka__button" type="button">Подробнее</button> -->
                </li>
           </ul>
         </section>
@@ -143,6 +184,27 @@
         <p class="main-footer__copyright">© 2022 Olga Egenburg</p>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+
+    <template id="photo-preview">
+      <section class="success">
+        <div class="success__inner">
+            <img class="preview__photo" alt="ЕК-Березовая Русь." src="img/ek-rus.png" width="260" height="211">
+            <h3 class="fialka__title">ЕК-Березовая Русь</h3>
+          <div  class="fialka__conatiner">
+            <div class="fialka__wrap-price">
+              <span class="fialka__price">60р</span>
+              <span class="fialka__type">лист</span>
+            </div>
+            <div class="fialka__wrap-price">
+              <span class="fialka__price">100р</span>
+              <span class="fialka__type">детка</span>
+            </div>
+          </div>
+          <button class="button fialka__button" type="button">Подробнее</button>
+        </div>
+      </section>
+    </template>
+
+    <script src="js/preview.js"></script>
   </body>
 </html>
