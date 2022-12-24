@@ -1,14 +1,13 @@
 .success {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  background-color: rgba(0, 0, 0, 0.8);
+};
