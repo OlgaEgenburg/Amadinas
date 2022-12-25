@@ -66,18 +66,19 @@ const copyImages = () => {
 
 
 //scripts
-const scripts = () => {
-  return gulp.src('source/js/*.js')
-    .pipe(terser())
-    .pipe(gulp.dest('build/js'))
-    .pipe(browser.stream());
-}
+// const scripts = () => {
+//   return gulp.src('source/js/*.js')
+//     .pipe(terser())
+//     .pipe(gulp.dest('build/js'))
+//     .pipe(browser.stream());
+// }
 
 // Copy
 
 const copy = (done) => {
   gulp.src([
-  'source/fonts/*.{woff2,woff}'
+  'source/fonts/*.{woff2,woff}',
+  `source/js/*.js`
   ], {
   base: 'source'
   })

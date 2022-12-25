@@ -45,7 +45,6 @@
     "not < 0.25%"
   ],
   "editorconfig": [
-    "*.json",
     "source/*.html",
     "source/img/**/*.svg",
     "source/sass/**/*.scss"

@@ -25,12 +25,10 @@
 
 .card__item {
   position: relative;
-}
-
-.card__item:nth-child(2) {
   background-color: $secondary-text;
   color: $basic-back;
 }
+
 
 .card__item:nth-child(4) {
   @include tablet {
@@ -53,18 +51,14 @@
 }
 
 .card__title {
-  background-color: $basic-back;
-  color: $basic-text;
+  background-color: $secondary-text;
+  color: $basic-back;
+  border-radius: 10px;
   font-weight: 700;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   padding: 5px 10px 5px;
-
-  &--additional {
-    background-color: $secondary-text;
-    color: $basic-back;
-  }
 }
 
 .card__link {
@@ -75,18 +69,14 @@
 }
 
 .card__author {
-  background-color: $basic-back;
-  color: $basic-text;
+  background-color: $secondary-text;
+  color: $basic-back;
+  border-radius: 10px;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
   padding: 5px 10px 5px;
-
-  &--additional {
-    background-color: $secondary-text;
-    color: $basic-back;
-  }
 }
 
 .card__info-container {
