@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мои Фиалки</title>
+     <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+     <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
+  </head>
+  <body class="page__body">
+    <div class="page__container">
+      <header class="main-header">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/logo.png" width="210" height="96" alt="Логотип Фиалки.">
+        </a>
+        <svg class="main-header__phone-icon" width="20" height="20" fill="currentcolor">
+          <use xlink:href="img/sprite.svg#phone-icon"></use>
+        </svg>
+        <a class="main-header__tel" href="tel:+79001111111">+7-905-566-21-35</a>
+        <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню сайта.</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="standart.html">
+                Стандартные
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current">
+                Трейлеры
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="mini.html">
+                Мини
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="care.html">
+                Уход
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-container">
+        <section class="fialka-standart">
+          <h1 class="fialka-standart__title">тип трейлер</h1>
+          <p class="fialka-standart__description">Тут много текста о них......</p>
+          <ul class="fialka-standart__list list">
+            <li class="list__item fialka">
+              <a class="fialka__link" href="#">
+                <img class="fialka__photo" alt="Jersey Rose Trail." src="img/jersey-rose.jpg" width="260" height="211">
+              </a>
+              <a class="fialka__title-link" href="#">
+                <h3 class="fialka__title">Jersey Rose Trail</h3>
+              </a>
+              <div class="fialka__hidden-description">
+                <p class="fialka__text">
+                  Полумахровые красновато-фиолетовые цветы, girl-листва, миниатюрный трейлер.
+                </p>
+              </div>
+              <div  class="fialka__conatiner">
+                <div class="fialka__wrap-price">
+                  <span class="fialka__price">60р</span>
+                  <span class="fialka__type">лист</span>
+                </div>
+                <div class="fialka__wrap-price">
+                  <span class="fialka__price">100р</span>
+                  <span class="fialka__type">детка</span>
+                </div>
+              </div>
+
+              <!-- <button class="button fialka__button" type="button">Подробнее</button> -->
+            </li>
+
+          </ul>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrap">
+          <div class="main-footer__email email">
+            <svg class="email__icon" width="40" height="40" fill="currentcolor">
+              <use xlink:href="img/sprite.svg#email-icon"></use>
+            </svg>
+            <div class="email__wrap">
+              <p class="email__text">Хочешь купить?</p>
+               <a class="email__value" href="mailto:olga@mgorod.com?subject=Фиалки">olga@mgorod.com</a>
+            </div>
+          </div>
+          <svg class="copyright__link-icon" width="32" height="32" fill="currentcolor">
+            <use xlink:href="img/sprite.svg#003-vk"></use>
+          </svg>
+          <div class="main-footer__wrap-tel">
+            <svg class="main-footer__phone-icon" width="20" height="20" fill="currentcolor">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
+            <a class="main-footer__tel" href="tel:+79001111111">+7-905-566-21-35</a>
+          </div>
+
+        </div>
+        <p class="main-footer__copyright">© 2022 Olga Egenburg</p>
+      </footer>
+    </div>
+
+    <template id="photo-preview">
+        <li class="list__item fialka">
+            <img class="fialka__photo" alt="ЕК-Березовая Русь." src="img/ek-rus.png" width="260" height="211">
+            <h3 class="fialka__title">ЕК-Березовая Русь</h3>
+             <div class="fialka__hidden-description">
+              <p class="fialka__text">
+                Фиалка с воздушными цветками-помпонами прекрасно переносит засуху и дает пышное цветение.
+              </p>
+            </div>
+            <div  class="fialka__conatiner">
+            <div class="fialka__wrap-price">
+              <span class="fialka__price">60р</span>
+              <span class="fialka__type">лист</span>
+            </div>
+            <div class="fialka__wrap-price">
+              <span class="fialka__price">100р</span>
+              <span class="fialka__type">детка</span>
+            </div>
+          </div>
+        </li>
+    </template>
+
+    <!-- <script src="js/preview.js" type="module"></script> -->
+  </body>
+</html>
