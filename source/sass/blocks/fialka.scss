@@ -28,9 +28,11 @@
 }
 
 .fialka:hover {
-  transform: scale(1.2);
-  width: 400px;
-  z-index: 3;
+  @include tablet {
+    transform: scale(1.2);
+    width: 400px;
+    z-index: 3;
+  }
 }
 
 .fialka:hover .fialka__hidden-description {
