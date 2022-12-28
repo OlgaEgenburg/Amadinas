@@ -1,3 +1,8 @@
+.intro {
+  @include mobile-width-only{
+    padding: 20px;
+  }
+}
 
 .intro__wrap-text {
   @include tablet {

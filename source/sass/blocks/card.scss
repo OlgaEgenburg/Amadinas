@@ -86,7 +86,7 @@
     justify-content: space-between;
   }
 
-  @include desktop {
+  @include tablet {
     position: absolute;
     bottom: 0px;
     box-sizing: border-box;
@@ -120,7 +120,7 @@
 .card__button-icon {
   opacity: 0.3;
 
-  @include desktop {
+  @include tablet {
     color: $additional-color-text;
     opacity: 1;
   }
