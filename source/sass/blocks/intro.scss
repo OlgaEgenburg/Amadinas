@@ -14,13 +14,13 @@
   }
 
   @include desktop {
-    left: 720px;
+    left: 57%;
     top: 300px;
   }
 }
 
 .intro__title {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   text-transform: uppercase;
   border-radius: 10px;
@@ -40,6 +40,7 @@
 }
 
 .intro__text {
+  padding: 10px;
   background-color: $secondary-text;
   color: $basic-back;
   border-radius: 10px;
